@@ -5,7 +5,8 @@
 
 **Stack:** Python (Pandas, DuckDB) · SQL · Tableau Desktop
 **Dataset:** [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) — UK e-commerce, Dec 2009 → Dec 2011, ~1.07M transactions, 5,878 unique customers
-**Dashboard:** *Add your Tableau Public link here once published* → `[View dashboard](https://public.tableau.com/...)`
+<img width="1387" height="892" alt="image" src="https://github.com/user-attachments/assets/d46e5ed3-c3bd-45f8-9420-ee7dbc1b60ed" />
+
 
 ---
 
