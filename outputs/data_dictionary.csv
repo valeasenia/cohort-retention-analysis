@@ -1,0 +1,20 @@
+file,column,type,meaning
+cohort_matrix.csv,cohort_month,DATE,Month each customer in this cohort first purchased
+cohort_matrix.csv,cohort_index,INT,Months since cohort_month (0 = acquisition month)
+cohort_matrix.csv,cohort_size,INT,Unique customers in the cohort (constant per cohort)
+cohort_matrix.csv,active_customers,INT,Unique customers from the cohort active in this month
+cohort_matrix.csv,retention_pct,FLOAT,100 × active_customers / cohort_size
+customer_summary.csv,customer_id,INT,Unique customer identifier
+customer_summary.csv,cohort_month,DATE,Month of first purchase — use to filter / colour by cohort
+customer_summary.csv,country,STR,Shipping country on first order
+customer_summary.csv,first_purchase_date,DATE,Date of first ever order
+customer_summary.csv,last_purchase_date,DATE,Date of most recent order
+customer_summary.csv,customer_lifespan_days,INT,Days between first and last purchase (0 for one-and-done)
+customer_summary.csv,total_orders,INT,Lifetime distinct invoice count
+customer_summary.csv,total_revenue,FLOAT,Lifetime £ spent
+customer_summary.csv,avg_order_value,FLOAT,total_revenue / total_orders
+customer_summary.csv,first_order_value,FLOAT,£ spent on first order (predictor of future retention)
+customer_summary.csv,is_churned,BOOL,1 if total_orders = 1 (brief's definition); else 0
+customer_summary.csv,is_lapsed_90d,BOOL,1 if no purchase in last 90 days of dataset
+customer_summary.csv,eligible_for_90d,BOOL,1 if acquired ≥ 90 days before dataset end (controls for right-censoring)
+customer_summary.csv,retained_90d,BOOL,1 if customer placed another order within 90 days of first (only meaningful when eligible_for_90d=1)

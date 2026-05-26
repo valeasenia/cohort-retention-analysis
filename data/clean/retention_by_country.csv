@@ -1,0 +1,5 @@
+country,customers,retention_90d_pct,avg_first_order_value,avg_lifetime_revenue,vs_uk_pp
+United Kingdom,4813,46.9,387.1,2986.41,0.0
+Germany,93,60.2,790.6,4553.07,13.3
+France,76,56.6,500.48,4368.64,9.7
+Spain,34,35.3,629.31,3100.29,-11.6

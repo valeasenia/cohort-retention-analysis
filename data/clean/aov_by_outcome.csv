@@ -1,0 +1,3 @@
+outcome,customers,avg_first_order_value,median_first_order_value,avg_lifetime_revenue
+returned within 90d,2491,485.03,315.66,5646.6
+churned (no return in 90d),2790,355.27,257.71,1173.06
