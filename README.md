@@ -3,8 +3,6 @@
 > **Which customers stopped buying, when did they leave, and why?**
 > A full-cycle analytics project on 1M UK e-commerce transactions: Python cleaning → cohort retention matrix → SQL-driven churn drivers → Tableau dashboard.
 
-![Cohort retention heatmap](reports/cohort_retention_heatmap.png)
-
 **Stack:** Python (Pandas, DuckDB) · SQL · Tableau Desktop
 **Dataset:** [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) — UK e-commerce, Dec 2009 → Dec 2011, ~1.07M transactions, 5,878 unique customers
 **Dashboard:** *Add your Tableau Public link here once published* → `[View dashboard](https://public.tableau.com/...)`
@@ -76,8 +74,6 @@ Of 5,878 unique customers, 1,623 placed exactly one invoice and disappeared. The
 International isn't uniformly worse: Germany and France over-perform, Spain under-performs. The story isn't "domestic vs export" — it's that **local fit varies by market and the UK book itself has room to grow**.
 
 ### Driver 3 — Holiday-season acquisitions don't stick
-
-![Three-driver summary chart](reports/churn_drivers.png)
 
 The right-most panel shows it best: customers acquired in **November / December retain ~37%** versus **~46% the rest of the year**. The most extreme case is the **Dec 2010 cohort (n=76) which retained only 16% within 90 days**. Classic gift-buyer pattern — Christmas shoppers don't become regulars.
 
